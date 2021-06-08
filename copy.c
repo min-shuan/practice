@@ -12,7 +12,7 @@ int main(int argc,char **argv){
 
   //開檔
   fd_in=open(argc[1],O_RDONLY);
-  fd_out=open(argv[2],O_WRONLY|O_CREAT|O_TRUNC,00600);
+  fd_out=open(argv[2],O_WRONLY|O_CREAT|O_TRUNC,00060);
 
   //檢查開檔
   if(fd_in == -1){
