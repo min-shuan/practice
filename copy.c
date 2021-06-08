@@ -11,7 +11,7 @@ int main(int argc,char **argv){
   char buf[1024];
 
   //開檔
-  fd_in=open(argc[1],O_RDONLY);
+  fd_in=open(argv[1],O_RDONLY);
   fd_out=open(argv[2],O_WRONLY|O_CREAT|O_TRUNC,00060);
 
   //檢查開檔
