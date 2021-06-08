@@ -25,10 +25,10 @@ int main(int argc,char **argv){
     read(fd, back, 1);
 
     lseek(fd, i, SEEK_SET);
-    read(fd, back, 1);
+    write(fd, back, 1);
 
     lseek(fd, (-1)*i-1, SEEK_END);
-    read(fd, front, 1);
+    write(fd, front, 1);
   }
   close(fd);
   return 0;
